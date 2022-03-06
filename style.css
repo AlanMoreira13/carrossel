@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./assets/anime-naruto-91867.jpg");
+}
+
+.container-slide {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 70vh;
+    background-color: #363636;
+    margin: 9vh auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgb(204, 101, 101);
+}
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.marca {
+    display: flex;
+    justify-content: center;
+    margin-left: 34%;
+    width: 30%;
+    margin-top: 4rem;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("./assets/images.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+    animation: color 1s infinite alternate linear;
+
+}
+
+@keyframes color {
+    0% {
+        color: white;
+        transform: rotateX(0deg);
+    }
+    100% {
+        color: rgb(129, 15, 15);
+        transform: rotateY(25deg);
+    }
+}
+
+.item {
+    width: 50vw;
+    height: 70vh;
+    transition: all 1s;
+}
+
+.item:first-child {
+    margin-left: -100%;
+}
+
+
+.item img {
+    width: 50vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.action-button {
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00000000;
+    user-select: none;
+    z-index: 1;
+    width: 30px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
