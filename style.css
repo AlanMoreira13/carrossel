@@ -23,7 +23,6 @@ body {
     display: flex;
     width: 50vw;
     height: 70vh;
-    background-color: aqua;
     border-radius: 10px;
     transition: all 1s;
     overflow: hidden;
@@ -91,4 +90,44 @@ body {
     border-radius: 10px;
     transition: all 1s;
 
+}
+
+@media screen and (max-width: 500px){
+    .container-slide {
+        width: 70vw;
+        height: 50vh;
+        margin: 9vh auto;
+        
+    }
+    
+    .container-items {
+        width: 70vw;
+        height: 50vh;
+        
+    }
+
+    .item {
+        width: 70vw;
+        height: 50vh;
+        transition: all 1s;
+    }
+    
+    
+    .item img {
+        width: 70vw;
+        height: 50vh;
+        
+    }
+
+    .action-button {
+        font: bold 30px sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #00000070;
+        user-select: none;
+        z-index: 1;
+        width: 30px;
+        cursor: pointer;
+    }
 }
